@@ -5,13 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panda eCommerce Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        #pre-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 10000;
+            overflow: hidden;
+            display: flex;
+            top: 0;
+            left: 0;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #pre-loader img {
+            width: 150px;
+        }
+    </style>
+
+
+    <title>Panda eCommerce Shop</title>
+
+
 </head>
 
-<body>
+<body class="overflow-hidden" onload="preloader ()">
+    <div class="" id="pre-loader">
+        <img src="./images/preloader.gif">
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div class="container">
@@ -231,6 +261,7 @@
         <small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
